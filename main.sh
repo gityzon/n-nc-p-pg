@@ -24,5 +24,4 @@ fi
 
 #启动
 php -S 0.0.0.0:8000 -t ~/${REPL_SLUG}\/nextcloud &
-nginx -t
 nginx -g 'daemon off;'
