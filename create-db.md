@@ -4,7 +4,7 @@ createdb -h 127.0.0.1
 psql -h 127.0.0.1
 create user nextcloud with password 'nextcloud-admin';
 CREATE DATABASE nextcloud  OWNER nextcloud;
-GRANT ALL PRIVILEGES ON DATABASE gitea to nextcloud;
+GRANT ALL PRIVILEGES ON DATABASE nextcloud to nextcloud;
 
 #### Options of database connection:
 
