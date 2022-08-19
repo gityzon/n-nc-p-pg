@@ -1,3 +1,5 @@
+#！警告：replit免费版中所有代码都是公开可见的，建议使用edu版部署
+#！RUN后，请按照 create-db.md 的指示创建数据库
 
 #初始化pgsql
 sh startpg.sh
