@@ -12,7 +12,8 @@ curl -L https://download.nextcloud.com/server/releases/latest-20.zip -o nextclou
 unzip nextcloud.zip
 rm -f nextcloud.zip
 fi
+chmod 777 ~/nginx/sbin/nginx
 
 #启动
 php -S 0.0.0.0:8000 -t ~/${REPL_SLUG}\/nextcloud
-~/${REPL_SLUG}\/.nginx/nginx -g 'daemon off;'
+~/${REPL_SLUG}\/.nginx/sbin/nginx -g 'daemon off;'
