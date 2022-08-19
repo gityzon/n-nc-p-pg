@@ -1,8 +1,8 @@
 { pkgs }: {
     deps = [
       pkgs.bashInteractive
-      pkgs.unzip
       pkgs.sqlite
+      pkgs.unzip
       pkgs.php74
       pkgs.php74Extensions.ffi
       pkgs.php74Extensions.zip
@@ -16,5 +16,7 @@
       pkgs.php74Extensions.simplexml
       pkgs.php74Extensions.curl
       pkgs.php74Extensions.pdo
+      pkgs.postgresql_14
+      pkgs.less
     ];
 }
