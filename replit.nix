@@ -16,6 +16,10 @@
       pkgs.php74Extensions.simplexml
       pkgs.php74Extensions.curl
       pkgs.php74Extensions.pdo
+      pkgs.php74Extensions.imagick
+      pkgs.php74Extensions.fileinfo
+      pkgs.php74Extensions.apcu
+      pkgs.php74Extensions.redis
       pkgs.postgresql_14
       pkgs.less
     ];
