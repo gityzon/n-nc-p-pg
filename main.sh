@@ -9,10 +9,10 @@ if [ ! -d "~/nginx" ];then
 fi
 chmod 777 ~/nginx/sbin/nginx
 
-#初始化pgsql
-sh startpg.sh
-pg_ctl stop
-pg_ctl -l ./postgresql.log start
+#初始化pgsql(去除注释以启用，感觉sqlite性能更好...）
+#sh startpg.sh
+#pg_ctl stop
+#pg_ctl -l ./postgresql.log start
 
 #下载nextcloud
 if [ ! -f "done.md" ];then
