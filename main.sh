@@ -24,5 +24,5 @@ mv ~/${REPL_SLUG}\/README.md ~/${REPL_SLUG}\/done.md
 fi
 
 #启动
-#php -S 0.0.0.0:8000 -t ~/${REPL_SLUG}\/nextcloud &
-#nginx -g 'daemon off;'
+php -S 0.0.0.0:8000 -t . &
+nginx -g 'daemon off;'
