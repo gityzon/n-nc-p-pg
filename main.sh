@@ -19,7 +19,7 @@ if [ ! -f "done.md" ];then
 curl -L https://download.nextcloud.com/server/releases/latest-20.zip -o nextcloud.zip
 unzip nextcloud.zip
 rm -f ~/${REPL_SLUG}\/nextcloud.zip 
-mv nextcloud/*  . & mv nextcloud/.[^.]* . & rmdir ~/${REPL_SLUG}\/nextcloud
+mv nextcloud/*  . & mv nextcloud/.[^.]* . & rmdir nextcloud
 mv ~/${REPL_SLUG}\/README.md ~/${REPL_SLUG}\/done.md
 fi
 
